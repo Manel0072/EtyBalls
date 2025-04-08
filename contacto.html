@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Ety Balls</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <h1>Ety Balls</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="Sorteo.html">Sorteo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+        <section id="contacto" class="section contacto">
+            <h2>Contacto</h2>
+            <p>¡Estamos aquí para ayudarte! Si tienes alguna pregunta o comentario, no dudes en contactarnos.</p>
+
+            <!-- Información de Contacto -->
+            <h3>Información de Contacto</h3>
+            <ul>
+                <li>📧 Email: <a href="mailto:info@etyballsENERGY.com">info@etyballsENERGY.com</a></li>
+                <li>📞 Teléfono: <a href="tel:+34653897263">653 89 72 63</a></li>
+            </ul>
+
+            <!-- Formulario de Contacto -->
+            <h3>Envíanos un Mensaje</h3>
+            <form action="enviar-contacto.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Ety Balls. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

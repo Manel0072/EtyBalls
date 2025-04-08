@@ -1,0 +1,315 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+.header {
+    background-color: #59155c;
+    color: rgb(215, 16, 172);
+    padding: 20px;
+    text-align: center;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #ffcc00;
+}
+
+/* Secciones */
+.section {
+    padding: 50px;
+    text-align: center;
+    background-color: white;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Formulario Sorteo */
+.sorteo form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+}
+
+.sorteo form input, .sorteo form label {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Formulario Contacto */
+.contacto form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+}
+
+.contacto form input, .contacto form label, .contacto form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.contacto textarea {
+    height: 100px;
+    resize: none;
+}
+
+input[type="submit"] {
+    background-color: #ffcc00;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: #e6b800;
+}
+
+/* Estilos para la sección de productos */
+.productos-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.product {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.product h3 {
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+.product p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Estilos para la sección Sobre Nosotros */
+.sobre-nosotros {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    text-align: left;
+}
+
+.sobre-nosotros h2, .sobre-nosotros h3 {
+    text-align: center;
+}
+
+.sobre-nosotros ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.sobre-nosotros ul li {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.sobre-nosotros a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.sobre-nosotros a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para la sección de eventos */
+.eventos-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.evento {
+    background-color: rgb(245, 240, 244);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(210, 41, 137);
+    text-align: center;
+    width: 300px;
+}
+
+.evento h3 {
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+.evento p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Estilos para la sección de contacto */
+.contacto ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.contacto ul li {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.contacto a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.contacto a:hover {
+    text-decoration: underline;
+}
+
+
+@media (min-width: 768px) {
+    .footer {
+        position: fixed;
+        bottom: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .header nav ul li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .sorteo {
+        padding: 30px 10px;
+        margin: 20px auto;
+    }
+    .sorteo-form input {
+        width: 90%;
+    }
+    .contacto form {
+        padding: 10px;
+    }
+    .evento {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .evento {
+        width: 100%;
+    }
+}
+
+/* Contenedor para las imágenes */
+.images-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px auto;
+    max-width: 80%; /* Ajusta el ancho máximo del contenedor */
+}
+
+/* Estilos para las imágenes */
+.images-container img {
+    max-width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: calc(280px); /* Ajusta el ancho de cada imagen */
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .images-container img {
+        width: calc(50% - 20px); /* Dos columnas en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .images-container img {
+        width: 100%; /* Una columna en pantallas muy pequeñas */
+    }
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .imagenes-container img {
+        width: 50%; /* Dos columnas en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .imagenes-container img {
+        width: 100%; /* Una columna en pantallas muy pequeñas */
+    }
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .images-container img {
+        width: calc(50% - 20px); /* Dos columnas en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .images-container img {
+        width: 100%; /* Una columna en pantallas muy pequeñas */
+    }
+}

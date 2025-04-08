@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteo - Ety Balls</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <h1>Ety Balls</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="Sorteo.html">Sorteo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+        <section id="sorteo" class="section sorteo">
+            <h2>Participa en Nuestro Sorteo</h2>
+            <p>¡Gana increíbles premios relacionados con nuestros productos! Participar es fácil y rápido.</p>
+
+            <!-- Premios -->
+            <h3>Premios</h3>
+            <ul>
+                <li>Paquete de bebidas energéticas Ety Balls</li>
+                <li>Viaje con un acompañante todo pagado , destino a elegir</li>
+            </ul>
+
+            <!-- Cómo Participar -->
+            <h3>Cómo Participar</h3>
+            <p>Completa el siguiente formulario para participar:</p>
+
+            <!-- Formulario de Participación -->
+            <form action="enviar-sorteo.php" method="post">
+                <label for="codigo">Codigo de la lata:</label>
+                <input type="text" id="codigo" name="codigo" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="aceptar">Acepto las condiciones del sorteo</label>
+                <input type="checkbox" id="aceptar" name="aceptar" required>
+
+                <input type="submit" value="Participar">
+            </form>
+        </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Ety Balls. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
