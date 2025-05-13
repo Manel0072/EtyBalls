@@ -59,6 +59,10 @@ body {
     width: 100%;
 }
 
+.footer a:visited , .footer a{
+    color: white;
+}
+
 /* Formulario Sorteo */
 .sorteo form {
     background-color: #fff;
