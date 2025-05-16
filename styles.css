@@ -19,9 +19,16 @@ body {
     font-size: 24px;
 }
 
+.header h1{
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
 .menu {
     list-style: none;
     padding: 0;
+    margin-top: 50px;
+    margin-bottom: 0px;
 }
 
 .menu li {
