@@ -10,7 +10,10 @@ body {
 /* Header */
 .header {
     background-color: #59155c;
-    color: rgb(215, 16, 172);
+    color: rgb(183, 183, 183);
+    background-image:url(imagenes/rayo.png);
+    background-size:cover;
+    background-position: center;
     padding: 20px;
     text-align: center;
     font-size: 24px;
@@ -27,7 +30,7 @@ body {
 }
 
 .menu a {
-    color: white;
+    color: rgb(183, 183, 183);
     text-decoration: none;
     font-weight: bold;
     font-size: 13px;
@@ -227,6 +230,13 @@ input[type="submit"]:hover {
 .contacto a:hover {
     text-decoration: underline;
 }
+
+/* Estilos para la sección Textos legales */
+
+.textos-legales li{
+    text-align: left;
+}
+
 
 
 @media (min-width: 768px) {
