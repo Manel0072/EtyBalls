@@ -52,5 +52,37 @@
     <footer class="footer">
         <p>&copy; 2024 Ety Balls. <a href="textos-legales.html">Todos los derechos reservados.</a></p>
     </footer>
+    <!-- Cookie Popup -->
+    <div id="cookie-popup" class="cookie-popup">
+        <div class="cookie-popup-content">
+            <p>Utilizamos cookies propias y de terceros para mejorar nuestros servicios. Puedes gestionar tus preferencias a continuación.</p>
+            <div class="cookie-popup-buttons">
+                <button id="cookie-accept">Aceptar</button>
+                <button id="cookie-necessary">Solo necesarias</button>
+                <button id="cookie-configure">Configurar</button>
+            </div>
+            <div id="cookie-config-menu" class="cookie-config-menu">
+                <h4>Configuración de cookies</h4>
+                <label>
+                    <input type="checkbox" checked disabled>
+                    Cookies necesarias (siempre activas)
+                </label>
+                <label>
+                    <input type="checkbox" id="cookie-analytics">
+                    Cookies de análisis
+                </label>
+                <label>
+                    <input type="checkbox" id="cookie-marketing">
+                    Cookies de marketing
+                </label>
+                <div class="cookie-config-actions">
+                    <button id="cookie-save-config">Guardar preferencias</button>
+                    <button id="cookie-cancel-config">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="toast" class="toast"></div>
+    <script src="scripts.js"></script>
 </body>
 </html>

@@ -5,13 +5,14 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    overflow-x: hidden;
 }
 
 /* Header */
 .header {
     background-color: #59155c;
     color: rgb(183, 183, 183);
-    background-image:url(imagenes/rayo.png);
+    background-image:url(imagenes/rayo.webp);
     background-size:cover;
     background-position: center;
     padding: 20px;
@@ -244,7 +245,108 @@ input[type="submit"]:hover {
     text-align: left;
 }
 
+/* Cookie Popup Styles */
+.cookie-popup {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    color: #333;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(89, 21, 92, 0.15);
+    padding: 28px 24px 20px 24px;
+    z-index: 9999;
+    min-width: 320px;
+    max-width: 95vw;
+    display: none;
+    font-size: 1em;
+}
 
+.cookie-popup-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cookie-popup-buttons {
+    margin-top: 18px;
+    display: flex;
+    gap: 12px;
+}
+
+.cookie-popup button {
+    background-color: #59155c;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 1em;
+}
+
+.cookie-popup button:hover {
+    background-color: #ffcc00;
+    color: #59155c;
+}
+
+.cookie-config-menu {
+    display: none;
+    margin-top: 18px;
+    background: #f4f4f4;
+    border-radius: 8px;
+    padding: 18px 12px 12px 12px;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 2px 8px rgba(89, 21, 92, 0.08);
+}
+
+.cookie-config-menu h4 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    color: #59155c;
+    text-align: center;
+}
+
+.cookie-config-menu label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 0.98em;
+}
+
+.cookie-config-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Toast Notification Styles */
+.toast {
+    visibility: hidden;
+    min-width: 220px;
+    background-color: #59155c;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    padding: 14px 24px;
+    position: fixed;
+    z-index: 10000;
+    left: 50%;
+    bottom: 90px;
+    transform: translateX(-50%);
+    font-size: 1em;
+    box-shadow: 0 2px 12px rgba(89, 21, 92, 0.18);
+    opacity: 0;
+    transition: opacity 0.4s, visibility 0.4s;
+}
+
+.toast.show {
+    visibility: visible;
+    opacity: 1;
+}
 
 @media (min-width: 768px) {
     .footer {
